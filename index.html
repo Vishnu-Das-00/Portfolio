@@ -1049,7 +1049,7 @@ window.VISUALS = {
   };
   const saved = store.get();
   let idx = Number.isInteger(saved.i) && saved.i >= 0 && saved.i < TRACKS.length ? saved.i : 0;
-  let vol = typeof saved.vol === 'number' ? saved.vol : 0.35;
+  let vol = typeof saved.vol === 'number' ? saved.vol : 0.50;
   let muted = !!saved.muted;
   let userPaused = !!saved.paused;      // user explicitly paused last time
   let fade = 1, fadeTimer = null, failures = 0, mutedAuto = false;
